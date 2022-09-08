@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 8080",
-    "build": "lscpu -p | egrep -v \"^#\" | sort -u -t, -k 2,4 | wc -l; next build",
+    "build": "./read-file.sh; next build",
     "start": "next start -p 8080",
     "stop": "next stop"
   },
